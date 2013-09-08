@@ -1,0 +1,46 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:orientation="vertical">
+
+    <LinearLayout 
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+     
+        <Button 
+            style="?android:attr/buttonBarButtonStyle"
+	        android:id="@+id/button1"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:onClick="newBlast"
+	        android:text="@string/newblast" />
+        
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button2"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:onClick="updateBlasts" />
+            
+    </LinearLayout>
+
+    <ListView
+	    android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+		android:padding="10dp"
+		android:fillViewport="true"
+        android:textSize="20sp"
+        android:background="#d1e4a5"
+        android:textColor="#076461">
+	</ListView>
+	
+</LinearLayout>
